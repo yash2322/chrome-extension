@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "PassMeIn",
+    "version": "1.0",
+    "description": "Pass me in : Makin you secure",
+    "permissions":["activeTab"],
+    "icons": {
+        "128": "./image/logo.png",
+        "46": "./image/logo.png",
+        "16": "./image/logo.png"
+    },
+    "browser_action": {
+        "default_icon": "./image/logo.png",
+        "default_popup": "popup.html"
+    }
+
+}
