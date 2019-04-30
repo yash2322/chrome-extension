@@ -3,7 +3,7 @@
     "name": "PassMeIn",
     "version": "1.0",
     "description": "Pass me in : Makin you secure",
-    "permissions":["activeTab"],
+    "permissions":["tabs"],
     "icons": {
         "128": "./image/logo.png",
         "46": "./image/logo.png",
