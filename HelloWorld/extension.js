@@ -24,7 +24,7 @@ $(document).ready(function (){
 
                clearInterval(interval);
                $("#submit").text("Send Again")
-               $("#count_down").text("Trouble Logging in 'try using Email' or 'send again'");
+               $("#count_down").text("Trouble Logging in? 'try using Email' or 'send again'");
 
                $("#bar_count").css("width",)
               counter=10;             

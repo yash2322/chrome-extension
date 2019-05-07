@@ -2,8 +2,8 @@
     "manifest_version": 2,
     "name": "PassMeIn",
     "version": "1.0",
-    "description": "Pass me in : Makin you secure",
-    "permissions":["activeTab"],
+    "description": "Pass me in : Making you secure : Developed by mayank, rishabh, souvick & yash",
+    
     "icons": {
         "128": "./image/logo.png",
         "46": "./image/logo.png",
@@ -13,8 +13,15 @@
         "default_icon": "./image/logo.png",
         "default_popup": "popup.html"
     },
+
+    "background":{
+        "scripts":["selectusername.js"],
+        "persistent":false
+    },
+
     "permissions":[
-        "notifications"
+        "notifications",
+        "contextMenus","activeTab"
     ]
 
 }
