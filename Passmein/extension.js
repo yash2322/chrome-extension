@@ -11,6 +11,7 @@ $(document).ready(function (){
         $("#text").text("Mobile Number");
         $("#input-field").attr("placeholder", "950xxxxxxx");
     });
+    
     $("#submit").click(function(){
         $("#submit").css("background-color"," #dd2233")
         $("#submit").css("color","#fefefe")

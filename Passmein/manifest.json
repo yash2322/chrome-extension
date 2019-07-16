@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "PassMeIn",
     "version": "1.0",
-    "description": "Pass me in : Making you secure : Developed by mayank, rishabh, souvick & yash",
+    "description": "Pass me in : Making you secure : Developed by Yash, Mayank Souvick & Rishabh || Beta-version",
     
     "icons": {
         "128": "./image/logo.png",
