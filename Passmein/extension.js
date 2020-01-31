@@ -1,4 +1,14 @@
 $(document).ready(function (){
+    
+    console.log(window.location.href);
+    chrome.tabs.getSelected(null,function(tab) {
+    var tablink = tab.url;
+        var title=tab.title;
+        console.log(tablink);
+        console.log(title);
+        document.getElementById("tle").innerHTML=title;
+});
+    
     $(".btn-options").click(function () {
         $(".btn-options").removeClass("active");
         $(this).addClass("active");
@@ -17,7 +27,7 @@ $(document).ready(function (){
         $("#submit").css("color","#fefefe")
         $("#submit").text("Request Send")
 
-        var counter = 10;
+        var counter = 5;
         var interval = setInterval(function() {
             $("#count_down").text("Please wait "+counter+"s");
             counter--;
@@ -25,7 +35,7 @@ $(document).ready(function (){
 
                clearInterval(interval);
                $("#submit").text("Send Again")
-               $("#count_down").text("Trouble Logging in? 'try using Email' or 'send again'");
+               $("#count_down").text("Trouble Logging in? 'try using Phone Number' or 'send again'");
 
                $("#bar_count").css("width",)
               counter=10;             
@@ -40,7 +50,22 @@ $(document).ready(function (){
         };
         chrome.notifications.create('pushNotif',notification_obj);
 
-
+        
     });
-   
+   $("#login").click(function(){
+       var user=document.getElementById("input-field").value;
+       var pass=document.getElementById("input-field").value;
+       if(user=="useryash2322@gmail.com"){
+    window.location.href="./afterlogin.html"
+    chrome.browserAction.setPopup({    
+        popup:"afterlogin.html"
+    });
+    }
+    else{
+        setTimeout(() => {
+            $("#error-text").css("display","block")
+        }, 5000);
+    }
+   });
+
 });

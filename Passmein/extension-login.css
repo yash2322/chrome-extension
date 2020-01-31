@@ -1,0 +1,27 @@
+h2{
+    text-align: center;
+    color: #dd2233;
+}
+.card_name{
+  text-align: left;
+  color:#dd2233;
+  background-color: black;
+  padding: 2% 2%;
+  border-radius: 3%;
+  cursor: pointer;
+}
+#cards p{
+    padding: 2% 4%;
+    color:#dd2233;
+    font-weight: 600;
+}
+#cards p span{
+    font-weight: bold;
+    color:black;
+}
+.collapse{
+    display: none;
+    background-color: whitesmoke;
+    border: 2px solid #dd2233;
+    border-radius: 2%;
+}

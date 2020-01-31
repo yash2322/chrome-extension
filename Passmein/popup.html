@@ -11,6 +11,7 @@
     
 
 </head>
+ 
 <body>
     <div id="logo">
         <img src="./image/final logo2.png" alt="">
@@ -21,9 +22,11 @@
 
     </div>
     <br />
+   
     <form>
-        <span id="text">Email</span><br /> <input type="text" name="username" placeholder="yash@gmail.com" id="input-field"><br><br />
-
+        <span id="text">Email</span><br /> <input type="text" name="username" placeholder="yash@gmail.com" id="input-field"><br/>
+        <span>Password</span>
+        <input type="password" name="password" placeholder="password" id="input-field2">
 
         <!-- <div class="OTP">
              <input type="number" name="otp" placeholder="1" class="otp-input">
@@ -35,21 +38,28 @@
          <div class="text_container" style="display:flex;justify-content:center">
              <div><span>ONE TIME PASSWORD </span></div>
          </div><br />-->
-        <div id="submit">Log In</div>
+         <div id="error">
+            <p id="error-text">Enter correct username and password</p>
+        </div> 
+        <a id="login"><div id="submit">Log In</div></a>
     </form>
     <div id="count_down">
         &nbsp;
     </div>
+    
     <!--<div class="current_tab">
         <p id="title-tab"></p>
 
     </div>-->
-    <br />
+   
     <hr style="width:90%;text-align:center" />
     <div class="create-account">
         <div id="new-account">
             <a href="https://mayank9804.github.io/PassMeIN/" target="_blank">Create an account</a>
         </div>
+            <p>Click to Save Password: <span id="tle"> </p>
+         
+        
     </div>
     <div id="footer">
         <a href=""><i class="fab fa-facebook-f f"></i></a>

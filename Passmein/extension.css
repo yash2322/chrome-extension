@@ -53,6 +53,9 @@ input{
     color:#555;
    
 }
+input:focus{
+border:2px solid #ce4f5a;
+}
 #input::placeholder{
     text-indent:0%;
     transition:text-indent 0.3s ease-in-out;
@@ -108,6 +111,12 @@ form span {
     font-size: 14px;
     font-weight: bold;
 }
+#error-text{
+display:none;
+color: #dd2233;
+text-align: center;
+font-weight: bold;
+}
 #bar_count{
     background-color: #dd2233;
     width: 0%;
@@ -145,4 +154,8 @@ text-decoration:none;
 }
 h3{
     text-align: center;
+}
+#tle{
+    margin: 0 auto;
+    color: #dd2233
 }

@@ -15,13 +15,14 @@
     },
 
     "background":{
-        "scripts":["selectusername.js"],
+        "scripts":["selectusername.js","extension.js"],
         "persistent":false
     },
 
     "permissions":[
         "notifications",
-        "contextMenus","activeTab"
+        "contextMenus","activeTab","tabs"
     ]
+    
 
 }
